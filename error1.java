@@ -9,16 +9,8 @@ import java.nio.file.*;
 import java.util.stream.*;
 
 public class BadCodeExample {
-    // Bad constant naming
     private static final String DB_PASSWORD = "rootpassword123";
-    private static final int MAX_COUNT = 100;
-    private static final String A_CONSTANT_VALUE = "some value";
-    
-    // Poor field naming
     private int a;
-    private String b;
-    private List<Object> c;
-    private Map<String, Object> d1;
     
     // SQL injection vulnerability
     public List<User> getUsersByName(String name) throws SQLException {
